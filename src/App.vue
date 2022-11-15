@@ -1,32 +1,49 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@font-face {
+    font-family: 'Avenir';
+    src: url('./assets/fonts/AvenirNextCyr/avenirnextcyr-bold-webfont.woff2') format('woff2'),
+        url('./assets/fonts/AvenirNextCyr/avenirnextcyr-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
 
-nav {
-  padding: 30px;
+@font-face {
+    font-family: 'Avenir';
+    src: url('./assets/fonts/AvenirNextCyr/avenirnextcyr-light-webfont.woff2') format('woff2'),
+        url('./assets/fonts/AvenirNextCyr/avenirnextcyr-light-webfont.woff') format('woff');
+    font-weight: light;
+    font-style: normal;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+@font-face {
+    font-family: 'Avenir';
+    src: url('./assets/fonts/AvenirNextCyr/avenirnextcyr-medium-webfont.woff2') format('woff2'),
+        url('./assets/fonts/AvenirNextCyr/avenirnextcyr-medium-webfont.woff') format('woff');
+    font-weight: regular;
+    font-style: normal;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  width: fit-content;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  color: black;
 }
 </style>
